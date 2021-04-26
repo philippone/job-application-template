@@ -1,0 +1,41 @@
+{
+    "introduction": [
+        "Nachfolgend eine Auswahl..."
+    ],
+    "samples": [
+        {
+            "title": "Title",
+            "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit",
+                "euismod in pellentesque. Diam quis enim lobortis scelerisque fermentum. Et malesuada fames ac turpis egestas maecenas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Dolor morbi non arcu risus quis varius quam quisque. Quis imperdiet massa tincidunt nunc pulvinar sapien. Lorem ipsum dolor sit amet consectetur adipiscing elit. Bibendum arcu vitae."
+                ],
+            "images": [
+                ["/assets/samples/pseudo/storybook-pseudo-states-addon2.png"]
+            ],
+            "imageBorder": true
+        },
+        {
+            "title": "Masterarbeit",
+            "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit"
+            ],
+            "images": [
+                ["/assets/samples/ma/annotation-add.png"]
+            ]
+        },
+        {
+            "title": "Bachelorarbeit",
+            "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit"
+            ],
+            "images": [
+                ["/assets/samples/ba/magnification.png", "/assets/samples/ba/moving2.png","/assets/samples/ba/resolution_home.png"]
+            ]
+        }
+
+    ]
+}

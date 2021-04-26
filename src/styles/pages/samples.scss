@@ -1,0 +1,52 @@
+.samples {
+  h2 {
+    border-bottom: 1pt dotted var(--color-primary);
+  }
+
+  .text {
+      font-size: var(--font-size-s);
+      text-align: justify;
+  }
+
+  .images {
+      float: right;
+      width: 35%;
+  }
+  section.sample {
+    clear: both;
+    margin-bottom: var(--spacing-xs, 5mm);
+  }
+
+  .row {
+      display: flex;
+      flex-direction: row;
+      
+      .images {
+          float: right;
+          flex: 0 1 auto;
+      }
+
+      .text {
+        flex: 1 0 60%;
+      }
+  }
+
+  .image-row {
+      padding-left: var(--spacing-xs, 5mm);
+      display: flex;
+
+      figure {
+          display: inline-flex;
+          flex: 1 1 auto;
+          margin: var(--spacing-xxs,1mm);
+
+          img {
+              width: 100%;
+
+              &.border {
+                border: 1px solid black;
+              }
+          }
+      }
+  }
+}

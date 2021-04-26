@@ -1,0 +1,15 @@
+{
+  "subject": "Job Title",
+  "name": "Employer",
+  "address": {
+    "street": "Street 1",
+    "postal": "66117 Postal Code"
+  },
+  "attachments": [
+      "Anschreiben",
+      "Lebeslauf",
+      "Arbeitsproben",
+      "Zeugnis 1",
+      "Zeugnis 2"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Bewerbung xyz",
+  "keywords": [
+    "Your Name",
+    "Developer"
+  ],
+  "author": {
+    "name": "Name",
+    "address": {
+      "street": "Your Street 1",
+      "postal": "Your Postal",
+      "country": "Your Country"
+    },
+    "email": "name@mail.de",
+    "web": "www.my-homepage.dev",
+    "phone": "+phone number",
+    "degree": "your degree",
+    "title": "Your Job Title",
+    "subtitle": "Your Job Subtitle",
+    "avatar": "/assets/pic.jpg",
+    "social": {
+      "mail": "mailto:name@mail.de",
+      "github": "https://github.com/xyz",
+      "twitter": "https://twitter.com/xyz",
+      "xing": "https://www.xing.com/profile/xyz"
+    }
+  }
+} 

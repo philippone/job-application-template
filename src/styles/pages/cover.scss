@@ -1,0 +1,32 @@
+.cover {
+    article {
+        margin-top: 10%;
+
+        h1 {
+            font-size: 28pt;
+        }
+
+        img.avatar {
+            width: 30%;
+            border: 1pt solid black;
+        }
+
+        header {
+            margin-top: var(--spacing-xs);
+            padding: 0;
+            font-size: var(--font-size-l);
+
+            .person {
+                font-size: var(--font-size-l);
+
+                .name {
+                    font-size: var(--font-size-xxl);
+                }
+            }
+        }
+
+        .attachments {
+            margin-top: var(--spacing-l, 5cm);
+        }
+    }
+} 

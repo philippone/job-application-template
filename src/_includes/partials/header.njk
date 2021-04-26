@@ -1,0 +1,29 @@
+<header>
+    <div  class="left">
+        <div class="person">
+            <span class="name">{{metadata.author.name}}</span>
+            <span class="degree">{{metadata.author.degree}}</span>
+            <span class="title">{{metadata.author.title}}</span>
+            <span class="subtitle">{{metadata.author.subtitle}}</span>
+        </div>
+    </div>
+    <div class="right">
+        <div class="address">
+        Adresse
+        <div class="group">
+                <span class="street">{{metadata.author.address.street}}</span>
+                <span class="postal">{{metadata.author.address.postal}}</span>
+                <span class="country">{{metadata.author.address.country}}</span>
+            </div>
+        </div>
+
+        <div class="contact">
+        Kontakt
+        <div class="group">
+                <span class="phone">{{metadata.author.phone}}</span>
+                <span class="mail">{{metadata.author.email}}</span>
+                <span class="web">{{metadata.author.web}}</span>
+            </div>
+        </div>
+    </div>
+</header>

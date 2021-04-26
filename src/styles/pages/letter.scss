@@ -1,0 +1,37 @@
+.letter {
+
+
+    article {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: var(--spacing-l, 5cm);
+    }
+
+    .application-header {
+        margin-top: var(--spacing-m, 1cm);
+        p {
+            margin: 0;
+        }
+    }
+
+    .letter-container {
+        margin-top: 30mm;
+        font-size: var(--font-size-m);
+
+
+        .date {
+            text-align: right;
+        }
+
+        .subject {
+            font-size: var(--font-size-xl);
+            line-height: calc(2 * var(--font-size-xl));
+        }
+
+        .text {
+            text-align: justify;
+        }
+    }
+}

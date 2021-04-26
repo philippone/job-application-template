@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 var(--page-padding-size-s) 0;
+    color: var(--color-secondary);
+    font-size: var(--font-size-xs);
+
+    .person {
+        display: flex;
+        flex-direction: column;
+        font-size: var(--font-size-xs);
+
+        .name {
+            color: var(--color-primary);
+            font-size: var(--font-size-s);
+        }
+    }
+
+    .right {
+        display: flex;
+    }
+
+    .address {
+        margin-right: 1cm;
+    }
+
+    .address, .contact {
+        display: inline;
+    }
+
+    .group {
+        display: inline-flex;
+        flex-direction: column;
+        padding-left: 5pt;
+        border-left: 1pt solid var(--color-secondary);
+        margin-left: 5pt;
+    }
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1cm 5mm 1cm;
+    text-align: right;
+}

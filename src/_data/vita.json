@@ -1,0 +1,206 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "birthday": "2020-10-30",
+    "birthplace": "Birthplace",
+    "familyStatus": "family status",
+    "nationality": "nationaltiy"
+  },
+  "languages": [
+    {
+      "lang": "Deutsch",
+      "level": 5
+    },
+    {
+      "lang": "Englisch",
+      "level": 4
+    }
+  ],
+  "work_experience": [
+    {
+      "start": "2011-4-15",
+      "end": "2012-07-01",
+      "title": "Job 1",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description",
+      "weekhours": 6
+    },
+    {
+      "start": "2012-11-01",
+      "end": "2015-09",
+      "title": "Job 2",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description",
+      "weekhours": 10
+    },
+    {
+      "start": "2015-08-15",
+      "end": "2016-02-01",
+      "title": "Job 3",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description"
+    },
+    {
+      "start": "2016-03-01",
+      "end": "2017-08-30",
+      "title": "Job 4",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description",
+      "weekhours": 8
+    },
+    {
+      "start": "2016-05-01",
+      "end": "2017-09-30",
+      "title": "Job 5",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description",
+      "weekhours": 12
+    },
+    {
+      "start": "2017-03-01",
+      "end": "2017-04-13",
+      "title": "Job 6",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description"
+    },
+    {
+      "start": "2017-10-15",
+      "title": "Job 7",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description"
+    },
+    {
+      "start": "2019-10-01",
+      "title": "Job 8",
+      "employer": "Employer",
+      "location": "Location",
+      "description": "Job description"
+    }
+  ],
+
+  "education": [
+    {
+      "start": "2001-08-01",
+      "end": "2009-08-01",
+      "title": "Education 1",
+      "location": "Location",
+      "grade": "1,0"
+    },
+    {
+      "start": "2010-10-01",
+      "end": "2014-04-01",
+      "title": "Education 2",
+      "location": "Location",
+      "grade": "1,0",
+      "description": "description",
+      "thesis": "thesis title"
+    },
+    {
+      "start": "2014-04-01",
+      "end": "2017-12-12",
+      "title": "Education 3",
+      "location": "Location",
+      "grade": "1,0",
+      "description": "description",
+      "thesis": "thesis title"
+    }
+  ],
+  "honorary": [
+    {
+      "start": "2009-08-01",
+      "end": "2010-04-01",
+      "title": "honorary 1",
+      "location": "Location"
+    },
+    {
+      "start": "2014-10-01",
+      "end": "2017-12-12",
+      "title": "honorary 1",
+      "location": "Location"
+    },
+    {
+      "start": "2014-05-01",
+      "title": "honorary 3",
+      "location": "Location",
+      "description": "description"
+    }
+  ],
+  "skills": {
+    "web": [
+      {
+        "name": "HTML, CSS",
+        "level": 5
+      },
+      {
+        "name": "Javascript",
+        "level": 5
+      },
+      {
+        "name": "Typescript",
+        "level": 5
+      },
+      {
+        "name": "Angular(Js)",
+        "level": 5
+      },
+      {
+        "name": "Web Components",
+        "level": 4
+      },
+      {
+        "name": "Statische Webseiten",
+        "level": 4
+      },
+      {
+        "name": "Vue, React",
+        "level": 3
+      }
+    ],
+    "programming": [
+      {
+        "name": "Java, Android",
+        "level": 3
+      },
+      {
+        "name": "REST",
+        "level": 2
+      },
+      {
+        "name": "Python",
+        "level": 2
+      },
+      {
+        "name": "Rust, C, C#, C++",
+        "level": 1
+      }
+    ],
+    "databases": [
+      {
+        "name": "PostgreSQL",
+        "level": 3
+      },
+      {
+        "name": "MySQL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      "Git",
+      "Gitlab (CI)",
+      "Github (Actions)",
+      "Jira",
+      "Docker",
+      "Latex",
+      "Antetype",
+      "Sketch",
+      "Unix Betriebssysteme"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<section class="experience">
+    <h2>{{vitaSectionName}}</h2>
+        <ul>
+            {% for item in vitaSectionData | reverse %}
+                <li>
+                    <div class="date">
+                        {% if not item.end %}
+                        <div>Seit</div>
+                        {% endif%}
+                        <time datetime="{{ item.start | date('Y-MM-DD') }}">{{ item.start | date("MMM Y", locale) }}</time>
+                        {% if item.end%}
+                            <span class="date-separator"> - </span>
+                            <time datetime="{{ item.end | date('Y-MM-DD') }}">{{ item.end | date("MMM Y", locale) }}</time>
+                        {% endif %}
+                        {% if item.weekhours %}
+                        <div class="weekhours">{{item.weekhours}}h/Woche</div>
+                        {% endif %}
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            {{item.title}}
+                        </div>
+                        <div class="employer">
+                            {{item.employer}} {% if item.employer%} - {% endif%} {{item.location}}
+                        </div>
+                        {% if item.grade %}
+                            <div class="grade">
+                                Abschlussnote {{item.grade}}
+                            </div>
+                        {% endif %}
+                        {% if item.description %}
+                            <div class="description">
+                                {{item.description}}
+                            </div>
+                        {% endif %}
+                    </div>
+                </li>
+                {% endfor%}
+            </ul>
+        </section>

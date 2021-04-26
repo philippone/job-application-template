@@ -1,0 +1,17 @@
+<div class="page {{templateClass}}" size="{{size}}">
+
+    <div class="subpage">
+    {% if not noHeader %}
+        {% include "partials/header.njk" %}
+    {% endif %}
+
+    {% block main %}
+        {{ content | safe }}
+    {% endblock %}
+
+    {% if not noFooter %}
+        {% include "partials/footer.njk" %}
+    {% endif %}
+    </div>
+
+</div>

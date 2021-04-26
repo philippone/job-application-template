@@ -1,0 +1,22 @@
+{% extends "../layouts/page.njk" %}
+
+{% set templateClass = 'cover' %}
+{% set noHeader = true %}
+{% set noFooter = true %}
+
+{%block main%}
+  <article>
+    <h1>Bewerbung als {{job.subject}}</h1>
+    <img class="avatar" src="{{ metadata.author.avatar | url}}" alt="avatar">
+    {% include "partials/header.njk" %}
+
+    <section class="attachments">
+    <h2>Anlagen</h2>
+        <ul>
+            {% for attachment in job.attachments %}
+            <li>{{attachment}}</li>
+            {% endfor%}
+        </ul>
+    </section>
+</article>
+{% endblock %}

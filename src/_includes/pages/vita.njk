@@ -1,0 +1,159 @@
+{% extends "../layouts/page.njk" %}
+
+{% set templateClass = 'vita' %}
+
+{% block main %}
+  <article>
+
+    <h1>Lebenslauf</h1>
+
+    <div class="columns">
+
+      <section class="experience">
+        <h2>Persönliche Daten</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <td>{{vita.personal.name}}</td>
+          </tr>
+          <tr>
+            <th>Geburtstag</th>
+            <td>
+              <time datetime="{{ vita.personal.birthday | date('Y-MM-DD') }}">{{ vita.personal.birthday | date("DD[.]MM[.]YYYY", locale) }}</time>
+            </td>
+
+          </tr>
+          <tr>
+            <th>Geburtsort</th>
+            <td>{{vita.personal.birthplace}}</td>
+          </tr>
+          <tr>
+            <th>Familienstand</th>
+            <td>{{vita.personal.familyStatus}}</td>
+          </tr>
+          <tr>
+            <th>Staatsangehörigkeit</th>
+            <td>{{vita.personal.nationality}}</td>
+          </tr>
+        </table>
+
+      </section>
+
+      {%set vitaSectionName = 'Berufserfahrung' %}
+      {%set vitaSectionData = vita.work_experience %}
+      {% include "partials/vita-section.njk" %}
+
+      {%set vitaSectionName = 'Schulische Ausbildung' %}
+      {%set vitaSectionData = vita.education %}
+      {% include "partials/vita-section.njk" %}
+
+      {%set vitaSectionName = 'Soziales Engagement' %}
+      {%set vitaSectionData = vita.honorary %}
+      {% include "partials/vita-section.njk" %}
+
+      <section class="languages">
+        <h2>Sprachen</h2>
+          <div class="columns">
+        {% for lang in vita.languages %}
+            <table>
+              <tr>
+                <th>{{lang.lang}}</th>
+                <td>
+                  {% for level in range(0, lang.level) %}
+                    <span class="level filled"></span>
+                  {% endfor %}
+                  {% for level in range(0, 5 - lang.level ) %}
+                    <span class="level"></span>
+                  {% endfor %}
+                </td>
+              </tr>
+            </table>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Fachkentnisse</h2>
+        <div class="columns">
+          <div class="skill-part">
+            <h3>Web</h3>
+            <table>
+              {% for skill in vita.skills.web %}
+                <tr>
+                  <th>{{skill.name}}</th>
+                  <td>
+                    {% for level in range(0, skill.level) %}
+                      <span class="level filled"></span>
+                    {% endfor %}
+                    {% for level in range(0, 5 - skill.level ) %}
+                      <span class="level"></span>
+                    {% endfor %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+
+          <div class="skill-part">
+            <h3>Programmieren</h3>
+            <table>
+              {% for skill in vita.skills.programming %}
+                <tr>
+                  <th>{{skill.name}}</th>
+                  <td>
+                    {% for level in range(0, skill.level) %}
+                      <span class="level filled"></span>
+                    {% endfor %}
+                    {% for level in range(0, 5 - skill.level ) %}
+                      <span class="level"></span>
+                    {% endfor %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+
+          <div class="skill-part">
+            <h3>Datenbanken</h3>
+            <table>
+              {% for skill in vita.skills.databases %}
+                <tr>
+                  <th>{{skill.name}}</th>
+                  <td>
+                    {% for level in range(0, skill.level) %}
+                      <span class="level filled"></span>
+                    {% endfor %}
+                    {% for level in range(0, 5 - skill.level ) %}
+                      <span class="level"></span>
+                    {% endfor %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+
+          {# <div class="skill-part">
+          <h3>Sonstiges</h3>
+          <div>
+            {% for skill in vita.skills.misc %}
+              {{skill.name}}{% if not loop.last%}, {%endif%}
+            {% endfor %}
+          </div>
+        </div> #}
+
+        </div>
+
+        <div class="skill-part">
+          <h3>Tools</h3>
+          <div>
+            {% for skill in vita.skills.tools %}
+              {{skill}}{% if not loop.last%}, {%endif%}
+              {% endfor %}
+            </div>
+          </div>
+
+        </section>
+      </article>
+    </div>
+
+  {% endblock %}
