@@ -12,7 +12,7 @@
 
         <section class="letter-container">
             <p class="date">{{letter.location}}, {{letter.date | date("DD[.]MM[.]YYYY", locale)}}</p>
-            <h1 class="subject">{{letter.subject}}</h1>
+            <h1 class="subject"><a id="letter"></a>{{letter.subject}}</h1>
             <p class="salutation">{{letter.salutation}}</p>
             {% for text in letter.text %}
                 <p class="text">{{text}}</p>

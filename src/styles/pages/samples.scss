@@ -14,7 +14,7 @@
   }
   section.sample {
     clear: both;
-    margin-bottom: var(--spacing-xs, 5mm);
+    margin-bottom: 5mm;
   }
 
   .row {
@@ -32,13 +32,13 @@
   }
 
   .image-row {
-      padding-left: var(--spacing-xs, 5mm);
+      padding-left: 5mm;
       display: flex;
 
       figure {
           display: inline-flex;
           flex: 1 1 auto;
-          margin: var(--spacing-xxs,1mm);
+          margin: 1mm;
 
           img {
               width: 100%;

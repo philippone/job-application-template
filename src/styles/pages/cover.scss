@@ -8,11 +8,11 @@
 
         img.avatar {
             width: 30%;
-            border: 1pt solid black;
         }
 
         header {
-            margin-top: var(--spacing-xs);
+            margin-top: 0.2cm;
+            margin-top: 0.5cm;
             padding: 0;
             font-size: var(--font-size-l);
 
@@ -26,7 +26,7 @@
         }
 
         .attachments {
-            margin-top: var(--spacing-l, 5cm);
+            margin-top: 5cm;
         }
     }
 } 

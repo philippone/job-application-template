@@ -12,12 +12,11 @@
   --color-secondary--dark:#414141;
   --color-red: #b92828;
 
-   --spacing-xxs: 1mm;
-   --spacing-xs: 0.5cm;
-   --spacing-s: 3mm;
-   --spacing-m: 1cm;
-  --spacing-l: 5cm;
-  // --social-icon: 1.3rem;
+  --spacing-xxs: 0.2rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 2rem;
+  --social-icon: 1.3rem;
 
   --font-size-base: 10pt;
 
@@ -30,7 +29,7 @@
   --font-size-xxl: 18pt;
   --font-size-xxxl: 20pt;
 
-  --page-padding: 1cm;
+  --page-margin-size: 1cm;
   --page-margin: 1cm auto;
   --page-padding-size: 2cm;
   --page-padding-size-s: 3mm;
@@ -73,8 +72,8 @@ article {
 .page {
   width: 21cm;
   height: 29.7cm;
-  padding: var(--page-padding, 1cm 1cm);
-  margin: var(--page-margin, 1cm auto);
+  padding: 5mm 1cm;
+  margin: 1cm auto;
   border: 1px #D3D3D3 solid;
   border-radius: 5px;
   background: white;

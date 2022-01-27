@@ -5,7 +5,7 @@
 {% block main %}
   <article>
 
-    <h1>Lebenslauf</h1>
+    <h1><a href="vita"></a>Lebenslauf</h1>
 
     <div class="columns">
 
@@ -76,60 +76,30 @@
         <h2>Fachkentnisse</h2>
         <div class="columns">
           <div class="skill-part">
-            <h3>Web</h3>
-            <table>
+            <h3>Web Frontend</h3>
+            <ol class="skill-list">
               {% for skill in vita.skills.web %}
-                <tr>
-                  <th>{{skill.name}}</th>
-                  <td>
-                    {% for level in range(0, skill.level) %}
-                      <span class="level filled"></span>
-                    {% endfor %}
-                    {% for level in range(0, 5 - skill.level ) %}
-                      <span class="level"></span>
-                    {% endfor %}
-                  </td>
-                </tr>
+                  <li>{{skill.name}}</li>
               {% endfor %}
-            </table>
+            </ol>
           </div>
 
           <div class="skill-part">
-            <h3>Programmieren</h3>
-            <table>
+            <h3>Backend</h3>
+            <ol class="skill-list">
+              {% for skill in vita.skills.backend %}
+                  <li>{{skill.name}}</li>
+              {% endfor %}
+            </ol>
+          </div>
+
+          <div class="skill-part">
+            <h3>Programmierung</h3>
+            <ol class="skill-list">
               {% for skill in vita.skills.programming %}
-                <tr>
-                  <th>{{skill.name}}</th>
-                  <td>
-                    {% for level in range(0, skill.level) %}
-                      <span class="level filled"></span>
-                    {% endfor %}
-                    {% for level in range(0, 5 - skill.level ) %}
-                      <span class="level"></span>
-                    {% endfor %}
-                  </td>
-                </tr>
+                <li>{{skill.name}}</li>
               {% endfor %}
-            </table>
-          </div>
-
-          <div class="skill-part">
-            <h3>Datenbanken</h3>
-            <table>
-              {% for skill in vita.skills.databases %}
-                <tr>
-                  <th>{{skill.name}}</th>
-                  <td>
-                    {% for level in range(0, skill.level) %}
-                      <span class="level filled"></span>
-                    {% endfor %}
-                    {% for level in range(0, 5 - skill.level ) %}
-                      <span class="level"></span>
-                    {% endfor %}
-                  </td>
-                </tr>
-              {% endfor %}
-            </table>
+            </ol>
           </div>
 
           {# <div class="skill-part">

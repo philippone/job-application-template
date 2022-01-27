@@ -20,9 +20,9 @@
         <div class="contact">
         Kontakt
         <div class="group">
-                <span class="phone">{{metadata.author.phone}}</span>
-                <span class="mail">{{metadata.author.email}}</span>
-                <span class="web">{{metadata.author.web}}</span>
+                <a class="phone" href="tel:{{metadata.author.phone}}">{{metadata.author.phone}}</a>
+                <a class="mail" href="mailto:{{metadata.author.email}}" target="_blank">{{metadata.author.email}}</a>
+                <a class="web" href="{{metadata.author.weblink}}" target="_blank">{{metadata.author.web}}</a>
             </div>
         </div>
     </div>

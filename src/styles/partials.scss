@@ -36,6 +36,15 @@ header {
         margin-left: 5pt;
     }
 
+    a {
+        text-decoration: none;
+        color: var(--color-secondary);
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
 }
 
 footer {

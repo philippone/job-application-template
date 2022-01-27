@@ -18,7 +18,7 @@
     section {
       break-inside: avoid;
       -webkit-column-break-inside: avoid;
-      margin-bottom: var(--spacing-s, 3mm);
+      margin-bottom: 3mm;
     }
   }
 
@@ -75,6 +75,7 @@
       position: absolute;
       bottom: 0;
       transform: translateX(calc(-50% - 1px));
+      -webkit-print-color-adjust: exact;
     }
 
     li {
@@ -91,8 +92,27 @@
         background: var(--color-primary);
         position: absolute;
         left: 0;
-        top: 1.3rem;
+        top: 0.3rem;
         transform: translateX(calc(-50% - 1px));
+        -webkit-print-color-adjust: exact;
+      }
+
+      &.promotion::before {
+        top: 0.2rem;
+      }
+
+      &.promotion::after {
+        content: "";
+        height: 100%;
+        width: 0.6rem;
+        height: 108%;
+        background: var(--color-primary);
+        position: absolute;
+        left: 0;
+        top: 0.8rem;
+        transform: translateX(calc(-50% - 1px));
+        z-index: 9999;
+        -webkit-print-color-adjust: exact;
       }
 
       .date {
@@ -140,20 +160,21 @@
   }
   section.languages,
   section.skills {
-
     > * {
       break-inside: avoid;
-     -webkit-column-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
     }
 
     div.skill-part:not(:first-of-type) {
-      margin-top: 3mm
+      // margin-top: 3mm;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
     }
 
     table {
       table-layout: fixed;
       break-inside: avoid;
-     -webkit-column-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
 
       th {
         font-weight: normal;
@@ -179,10 +200,21 @@
     width: var(--font-size-xxs);
     height: var(--font-size-xxs);
     display: inline-block;
+    -webkit-print-color-adjust: exact;
 
     &.filled {
       border: 1px solid var(--color-secondary--dark);
       background: var(--color-secondary--dark);
+    }
+  }
+
+  ol.skill-list {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+
+    li {
+      list-style: circle;
+      padding: 0.2rem;
     }
   }
 }
