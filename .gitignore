@@ -19,3 +19,5 @@ _site/
 .DS_Store
 /.tmp
 .env
+
+output/**/*.pdf
